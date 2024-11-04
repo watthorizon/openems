@@ -26,7 +26,7 @@ jobs:
     - name: Build and push Docker image
       run: |
         IMAGE_NAME="gcr.io/watt-horizon/openems-edge"
-        docker build -t $IMAGE_NAME tools/docker/edge/
+        docker build -t $IMAGE_NAME -f tools/docker/edge/ .
         docker push $IMAGE_NAME
 
     - name: Deploy to Cloud Run
