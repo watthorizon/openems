@@ -5,8 +5,8 @@
 -resolve.effective: active
 
 -runproperties: \
-	felix.cm.dir=/Users/wojtek/eclipse-workspace/openems/config,\
-	openems.data.dir=/Users/wojtek/eclipse-workspace/openems/data,\
+	felix.cm.dir=/var/opt/openems/config,\
+	openems.data.dir=/var/opt/openems/data,\
 	org.osgi.service.http.port=8080,\
 	org.osgi.service.http.host=0.0.0.0,\
 	felix.webconsole.host=0.0.0.0,\
