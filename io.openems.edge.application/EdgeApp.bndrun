@@ -8,6 +8,7 @@
 	felix.cm.dir=/Users/wojtek/eclipse-workspace/openems/config,\
 	openems.data.dir=/Users/wojtek/eclipse-workspace/openems/data,\
 	org.osgi.service.http.port=8080,\
+	org.osgi.service.http.host=0.0.0.0,\
 	org.apache.felix.eventadmin.Timeout=0,\
 	org.ops4j.pax.logging.DefaultServiceLog.level=INFO
 
