@@ -9,11 +9,6 @@
 	openems.data.dir=/var/opt/openems/data,\
 	org.osgi.service.http.port=8080,\
 	org.osgi.service.http.host=0.0.0.0,\
-	felix.webconsole.host=0.0.0.0,\
-    felix.webconsole.servlet.allowRemote=true,\
-    felix.webconsole.ip=0.0.0.0/0,\
-	org.apache.felix.webconsole.username=watthorizon,\
-    org.apache.felix.webconsole.password=watthorizon2024,\
 	org.apache.felix.eventadmin.Timeout=0,\
 	org.ops4j.pax.logging.DefaultServiceLog.level=INFO
 
