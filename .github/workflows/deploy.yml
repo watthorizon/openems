@@ -19,6 +19,12 @@ jobs:
       with:
         service_account_key: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
         project_id: watt-horizon  
+        
+    - name: Verify Authentication and Permissions
+      run: |
+        gcloud auth list
+        gcloud projects describe watt-horizon
+        gcloud artifacts repositories list --location=europe-central2
 
     - name: Configure Docker
       run: gcloud auth configure-docker europe-central2-docker.pkg.dev
