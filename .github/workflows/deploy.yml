@@ -42,6 +42,7 @@ jobs:
 
     - name: Deploy to Cloud Run
       run: |
+        IMAGE_NAME="europe-central2-docker.pkg.dev/watt-horizon/openems-edge/openems-edge:latest"
         gcloud run deploy openems-edge \
           --image $IMAGE_NAME \
           --region europe-central2 \
