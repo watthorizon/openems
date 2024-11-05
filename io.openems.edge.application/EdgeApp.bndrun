@@ -11,7 +11,7 @@
 	org.osgi.service.http.host=0.0.0.0,\
 	felix.webconsole.host=0.0.0.0,\
     felix.webconsole.servlet.allowRemote=true,\
-    felix.webconsole.ip=217.113.236.246/32,\
+    felix.webconsole.ip=0.0.0.0/0,\
 	org.apache.felix.webconsole.username=watthorizon,\
     org.apache.felix.webconsole.password=watthorizon2024,\
 	org.apache.felix.eventadmin.Timeout=0,\
