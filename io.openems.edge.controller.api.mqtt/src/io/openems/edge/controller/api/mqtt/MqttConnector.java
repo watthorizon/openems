@@ -13,9 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.eclipse.paho.mqttv5.client.IMqttClient;
 import org.eclipse.paho.mqttv5.client.MqttCallback;
 import org.eclipse.paho.mqttv5.client.MqttClient;
-import org.eclipse.paho.mqttv5.client.MqttClientPersistence;
 import org.eclipse.paho.mqttv5.client.MqttConnectionOptions;
-import org.eclipse.paho.mqttv5.client.persist.MqttDefaultFilePersistence;
 import org.eclipse.paho.mqttv5.common.MqttException;
 
 /**
@@ -79,8 +77,7 @@ public class MqttConnector {
 			String password, String certPem, String privateKeyPem, String trustStorePem, MqttCallback callback)
 			throws IllegalArgumentException, MqttException {
 
-		MqttClientPersistence persistence = new MqttDefaultFilePersistence("/var/opt/openems/data/mqtt");
-		IMqttClient client = new MqttClient(serverUri, clientId, persistence);
+		IMqttClient client = new MqttClient(serverUri, clientId);
 		if (callback != null) {
 			client.setCallback(callback);
 		}
